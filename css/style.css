@@ -516,8 +516,94 @@ a {
     font-weight: 800;
 }
 
+#main-footer {
+    background: #413e38;
+    color: #fff;
+}
+
+#main-footer h3 {
+    font-weight: 900;
+    font-size: 19px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+} 
+
+ul {
+    list-style: none;
+}
+
+#main-footer .list li {
+    padding: 7px 0;
+    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;    
+    width: 80%;
+}
 
 
+#main-footer .list li:first-child {
+    padding-top: 0px;
+}
+
+#spec-foot-div .list li {
+    padding: 4px 0;
+    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;    
+}
+
+#main-footer i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+#main-footer .list li a {
+    color: #fff;
+}
+
+.py-2 {
+    padding: 3rem 0;
+}
+
+.container2 {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 3rem;
+    overflow: hidden;
+}
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+#main-footer img {
+    width: 58px;
+}
+
+.two-logos {
+    display: flex;
+    align-items: flex-end;
+}
+
+.two-logos h2 {
+    font-family: 'Courgette', cursive !important;
+    display: inline-block !important;
+    font-size: 24px !important;
+    margin-right: 20px;
+}
+
+#foot-p {
+    margin-top: 10px;
+}
+
+#main-footer hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#credit {
+    font-weight: 700;
+}
 
 
 
