@@ -68,17 +68,14 @@ function init() {
 
 var skewed = document.querySelector('.skewed');
 
-window.addEventListener('scroll', function () {
-    var value = 3 - window.scrollY / 90;
-    skewed.style.transform = "skewY(" + value + "deg)"
-})
+// window.addEventListener('scroll', function () {
+//     var value = 3 - window.scrollY / 90;
+//     skewed.style.transform = "skewY(" + value + "deg)"
+// })
 
 let movtextBig = document.getElementById('movtext-big');
 let movtextBigShow = false;
 var span1 = document.querySelector('.movtext span');
-
-// txt-type
-// console.log(span1);
 
 window.onscroll = function () {
     if (window.pageYOffset > 160) {

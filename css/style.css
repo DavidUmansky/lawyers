@@ -29,6 +29,11 @@ p {
     position: relative;
 }
 
+#web-head .hero2 {
+    background: url(../photos/patish.jpg) no-repeat center top/cover;
+    position: relative;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -38,6 +43,10 @@ p {
     height: 100%;
     background: rgb(79 80 75 / 18%);
     /* mix-blend-mode: darken; */
+}
+
+.hero2::before {
+    background: rgb(0 0 0 / 31%);
 }
 
 #web-head section .skewed {
@@ -50,6 +59,12 @@ p {
     transform: skewY(3deg);
     transform-origin: top right;
 }
+
+#web-head section .skewed2 {
+    transform: skewY(-3deg);
+    transform-origin: top left;
+}
+
 
 #web-head .small-head {
     color: #cdb252;
@@ -331,7 +346,7 @@ a {
 
 .reveal2 {
     /* position: relative; */
-    transform: translateX(-150px);
+    transform: translateX(150px);
     opacity: 0;
     transition: all 1s ease-in-out;
 }
@@ -345,7 +360,7 @@ a {
     padding: 65px 10px 40px;
 }
 
-#team h2 {
+#team h2,#about-detalis h2, #about-members h2   {
     text-align: center;
     margin-bottom: 39px;
     color: #c9a939;
@@ -353,8 +368,16 @@ a {
     font-weight: 800;
 }
 
+#about-detalis h2 {
+    margin-bottom: 8px;
+}
+
+#about-members h2 {
+    margin-top: 60px;
+}
+
 #likes h2 {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
 }
 
 #team h3 {
@@ -604,6 +627,69 @@ ul {
 #credit {
     font-weight: 700;
 }
+
+#about-detalis {
+    background-color: rgb(81 77 71 / 75%);
+    width: 694px;
+    height: 261px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: justify;
+    padding: 20px 60px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+#about-detalis p {
+    color: white;
+}
+
+#about-members,#home-b,#likes {
+    z-index: 100;
+    position: relative;
+}
+
+.about-preson {
+    width: 820px;
+    margin: auto;
+    /* text-align: justify; */
+    margin-bottom: 60px;
+}
+
+.about-preson h3 {
+    margin-bottom: 8px;
+}
+
+#home-b {
+    padding: 2rem 16px;
+    text-align: center;
+}
+
+#home-b .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+#home-b .stats div {
+    padding: 40px 35px;
+}
+
+#home-b .stats div:nth-child(odd) {
+    background-color: #dbe7d3;
+}
+
+#home-b .stats div:nth-child(even) {
+    background-color: #dbc36f;
+}
+
+.advantage * {
+    margin-bottom: 8px;
+}
+
 
 
 
