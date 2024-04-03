@@ -373,7 +373,7 @@ a {
 }
 
 #about-members h2 {
-    margin-top: 60px;
+    margin-top: 220px;
 }
 
 #likes h2 {
@@ -629,22 +629,23 @@ ul {
 }
 
 #about-detalis {
-    background-color: rgb(81 77 71 / 75%);
-    width: 694px;
-    height: 261px;
+    background-color: rgba(39, 35, 31, 0.932);
+    width: 830px;
+    /* height: 261px; */
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: justify;
-    padding: 20px 60px;
+    padding: 40px 80px;
     border-radius: 4px;
-    margin-top: 30px;
+    margin-top: 320px;
 }
 
 #about-detalis p {
     color: white;
+    font-size: 19px;
 }
 
 #about-members,#home-b,#likes {
