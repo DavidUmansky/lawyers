@@ -266,6 +266,7 @@ a {
     color: #c9a939;
     text-align: center;
 }
+
 #check-form h2 {
     font-weight: 600;
     width: 100%;
@@ -360,7 +361,7 @@ a {
     padding: 65px 10px 40px;
 }
 
-#team h2,#about-detalis h2, #about-members h2   {
+#team h2, #about-detalis h2, #about-members h2, .hero3 h2, .h2-in-img {
     text-align: center;
     margin-bottom: 39px;
     color: #c9a939;
@@ -380,12 +381,40 @@ a {
     margin-bottom: 45px;
 }
 
+.hero3 * {
+    z-index: 1;
+    margin: auto;
+}
+
+.hero3 h2 {
+    margin-bottom: 0px;
+    margin-top: 138px;
+    text-align: right;
+    width: 600px;
+}
+
+.hero3 p {
+    color: white;
+    text-align: justify;
+    width: 600px;
+    margin-top: 0px;
+}
+
 #team h3 {
     font-size: 23px;
     font-weight: 500;
     margin-top: 8px;
     color: #413e38;
     font-weight: 400;
+}
+
+.hero3 h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 16px;
+    margin-top: 11px;
+    width: 600px;
+    text-align: right;
 }
 
 .grid-conten {
@@ -395,7 +424,7 @@ a {
     /* overflow: hidden; */
 }
 
-.members,.clients {
+.members, .clients {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -445,8 +474,7 @@ a {
     border: #f5f5f5 1px solid;
 }
 
-
-.callback-form .btn {
+.callback-form .btn, #call-btn {
     margin-top: 20px;
     font-family: 'Noto Sans Hebrew', sans-serif;
     cursor: pointer;
@@ -460,7 +488,41 @@ a {
     font-weight: 500;
 }
 
-.callback-form input,.callback-form textarea {
+#call-btn {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: 100;
+    left: 0px;
+    margin-top: initial;
+    padding: 14px 14px;
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+#call-btn:hover img {
+    margin-top: -10px;
+}
+
+
+/* #call-btn:hover {
+    width: 320px;
+} */
+
+#call-btn img {
+    width: 23px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.callback-form input, .callback-form textarea {
     width: 100%;
     padding: 4px;
     height: 40px;
@@ -500,12 +562,11 @@ a {
     width: 30px;
 }
 
-.person-div i
-{
+.person-div i {
     color: #f2eb0c;
     font-size: 18px;
 }
- 
+
 #likes {
     background: #ecf2e8;
     padding: 60px 0px;
@@ -527,7 +588,7 @@ a {
     font-weight: 100;
     font-size: 20px;
     font-style: italic;
-} 
+}
 
 #likes .grid-conten {
     padding: 0px 0px;
@@ -549,7 +610,7 @@ a {
     font-size: 19px;
     margin-bottom: 10px;
     text-decoration: underline;
-} 
+}
 
 ul {
     list-style: none;
@@ -557,7 +618,7 @@ ul {
 
 #main-footer .list li {
     padding: 7px 0;
-    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;    
+    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;
     width: 80%;
 }
 
@@ -568,7 +629,7 @@ ul {
 
 #spec-foot-div .list li {
     padding: 4px 0;
-    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;    
+    border-bottom: rgb(184 161 87 / 62%) solid 1.4px;
 }
 
 #main-footer i {
@@ -648,7 +709,7 @@ ul {
     font-size: 19px;
 }
 
-#about-members,#home-b,#likes {
+#about-members, #home-b, #likes {
     z-index: 100;
     position: relative;
 }
@@ -690,6 +751,194 @@ ul {
 .advantage * {
     margin-bottom: 8px;
 }
+
+#web-head .hero3 {
+    background: url(../photos/info-bg.jpg) no-repeat center top/cover;
+    height: 770px;
+    align-items: self-start;
+}
+
+.hero3::before {
+    background: rgb(13 14 12 / 87%);
+}
+
+#links-infoimg {
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    margin-top: 85px;
+    margin-bottom: 40px;
+}
+
+.img-header {
+    position: relative;
+    /* overflow: hiddsen; */
+    width: 640px;
+    margin-left: 100px;
+    border-bottom: 7px solid #c9a939;
+    border-top: 7px solid #c9a939;
+    /* border-radius: 18px 18px 0px 0px; */
+}
+
+.img-header img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 18px 18px 0px 0px; */
+}
+
+.img-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.295);
+    /* border-radius: 18px 18px 0px 0px; */
+}
+
+.img-links {
+    position: relative;
+}
+
+.img-links ul {
+    width: 350px;
+    background: #6b7068;
+    padding: 18px;
+    line-height: 2.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.img-links ul li {
+    width: 85%;
+}
+
+.img-links ul li a {
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 1px solid #fffce866;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-links ul li:last-child a {
+    border-bottom: none;
+}
+
+.img-links ul li a.current i {
+    display: initial;
+}
+
+.img-links ul li a i {
+    display: none;
+}
+
+.img-links ul li a:hover i {
+    display: initial;
+}
+
+.h2-in-img {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+.span-under {
+    text-decoration: underline;
+}
+
+.bild {
+    font-weight: 900;
+}
+
+#links-infoimg+p {
+    z-index: 100;
+    position: relative;
+    margin-bottom: 200px;
+    width: 1030px;
+    margin: auto;
+    margin-bottom: 200px;
+    padding-left: 450px;
+}
+
+#phones-action {
+    width: 355px;
+    z-index: 100;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -130px;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2.2;
+    border: 1px solid #f0c73569;
+    padding: 15px 28px;
+    display: none;
+    transform: translateY(100px);
+    opacity: 0;
+    animation: efect 0.8s forwards ease-in-out;
+}
+
+#phones-action i {
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+#phones-action p {
+    border-bottom: 1px solid #c9a939a8;    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;    
+    padding-right: 15px;
+}
+
+
+#phones-action p:last-child {
+    border-bottom: none;
+    /* padding-bottom: initial; */
+}
+
+@keyframes efect {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

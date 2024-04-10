@@ -135,6 +135,35 @@ function reveal2() {
 }
 
 
+let callBtn = document.querySelector('#call-btn');
+let details = document.querySelector('#phones-action');
+
+
+callBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    callBtn.style.display = 'none';
+    details.style.display = 'flex';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
