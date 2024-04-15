@@ -922,7 +922,11 @@ ul {
     margin-left: 5px;
 }
 
-
+.hero3 p a {
+    color: #ac9b5f;
+    text-decoration: underline;
+    font-weight: 500;
+}
 
 @keyframes efect {
     to {
