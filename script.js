@@ -78,7 +78,7 @@ let movtextBigShow = false;
 var span1 = document.querySelector('.movtext span');
 
 window.onscroll = function () {
-    if (window.pageYOffset > 160) {
+    if (window.pageYOffset > 50) {
         // span1.classList.add('txt-type'); 
         movtextBig.style.visibility = 'visible';
         movtextBig.style.transform = 'translateY(0px)';
@@ -90,10 +90,10 @@ window.onscroll = function () {
         }
     } else {
         // movtextBig.style.display = 'none';
-        movtextBig.style.visibility = 'hidden';
-        movtextBig.style.transform = 'translateY(100px)';
-        movtextBig.style.opacity = '0';
-        movtextBigShow = false;
+        // movtextBig.style.visibility = 'hidden';
+        // movtextBig.style.transform = 'translateY(100px)';
+        // movtextBig.style.opacity = '0';
+        // movtextBigShow = false;
         // span1.classList.remove('txt-type');
     }
 }
