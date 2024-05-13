@@ -758,7 +758,7 @@ ul {
 
 #web-head .hero3 {
     background: url(../photos/info-bg.jpg) no-repeat center top/cover;
-    height: 770px;
+    height: 870px;
     align-items: self-start;
 }
 
@@ -1031,7 +1031,10 @@ ul {
     transform: rotate(45deg);
 }
 
-
+#init-p {
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
 
 
 
