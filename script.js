@@ -106,7 +106,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 75;
+        var revealpoint = 35;
 
         if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('active');
@@ -138,11 +138,15 @@ function reveal2() {
 let callBtn = document.querySelector('#call-btn');
 let details = document.querySelector('#phones-action');
 
-
 callBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    callBtn.style.display = 'none';
-    details.style.display = 'flex';
+    if (callBtn.classList.contains('no-effect') === true) {
+        return;
+    } else {
+        e.preventDefault();
+        callBtn.style.display = 'none';
+        details.style.display = 'flex';
+    }
+
 });
 
 

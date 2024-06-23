@@ -136,7 +136,7 @@ h2.movtext {
 
 .second-top {
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .second-top h1 {
@@ -259,7 +259,7 @@ a {
     padding: 50px;
 }
 
-#intro-about .column-2 h2, #check-form h2, #likes h2 {
+#intro-about .column-2 h2, #check-form h2, #likes h2,#more-story h2 {
     font-size: 32px;
     line-height: 1.2;
     font-weight: 800;
@@ -524,6 +524,7 @@ a {
     vertical-align: middle;
     margin-right: 10px;
     transition: 0.5s;
+    border-radius: initial;
 }
 
 .callback-form input, .callback-form textarea {
@@ -651,7 +652,6 @@ ul {
 }
 
 .container2 {
-    max-width: var(--max-width);
     margin: auto;
     padding: 0 3rem;
     overflow: hidden;
@@ -1036,12 +1036,211 @@ ul {
     margin-bottom: 22px;
 }
 
+#web-head .hero4 {
+    height: 310px;
+    align-items: initial;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
 
+#web-head .hero4::before {
+    background: rgb(0 0 0 / 65%);
+}
 
+.hero4 h2 {
+    margin-bottom: initial;
+    margin-top: initial;
+    text-align: initial;
+    width: initial;
+}
 
+#stories {
+    padding-top: 80px;
+    z-index: 10;
+    position: relative;
+}
 
+#stories article,#main-story {
+    z-index: 100;
+    position: relative;
+}
 
+.story-s-div {
+    max-width: 1035px;
+    padding: 0 0.7rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
 
+.story-s-div img {
+    width: 505px;
+    margin-left: 70px;
+    border-radius: 8px;
+}
+
+.autor-blog > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 443px;
+}
+
+.autor-blog > div img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.autor-blog > div * {
+    display: block;
+}
+
+.name-span,.date-span {
+    position: absolute;
+    right: 70px;
+    top: 4px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.date-span {
+    top: 28px;
+}
+
+.autor-blog h2 {
+    padding-top: 20px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.autor-blog #call-btn {
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.autor-blog #call-btn img {
+    display: initial;
+    margin-left: initial;
+}
+
+.story-img {
+    border: 1px solid black; 
+}
+
+.article-dif {
+    background: #e7e9e6;
+    padding: 100px 0px 100px 0;
+}
+
+.article-dif .story-s-div{
+    flex-direction: row-reverse;
+}
+
+.article-dif .autor-blog {
+    margin-left: 75px;
+    padding-right: 75px;
+}
+
+.story-s {
+    margin-bottom: 100px;
+}
+
+.story-s:last-child {
+    margin-bottom: 0px;
+}
+
+#main-story {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+#more-story {
+    width: 450px;
+    padding-right: 75px;
+}
+
+#more-story h2 {
+    color: black;
+    text-align: right;
+    border-bottom: 0.5px solid #38393070;
+    margin-bottom: 45px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#main-story .autor-blog {
+    border-left: 1px solid #c9a939;
+    padding-left: 75px;
+}
+
+.story-grid {
+    display: flex;
+}
+
+.story-grid img {
+    width: 130px;
+    margin-left: initial;
+    border-radius: initial;
+    padding-top: 6px;
+}
+
+.story-grid p {
+    font-size: 15px;
+} 
+
+.story-grid h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#give-width-s {
+    width: 350px;
+    margin-left: 40px;
+}
+
+#give-width-s:hover {
+    cursor: pointer;
+    color: #c6a73b;
+}
+
+#give-width-s * {
+    margin-bottom: 8px;
+}
+
+.autor-end {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.divider {
+    width: 50px;
+    height: 6px;
+    background: #66937ed9;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#main-story + #intro-about {
+    padding-top: 50px;
+}
+
+.sdiv-zug img.zugim {
+    margin-left: initial;
+    margin-right: 70px;
+    width: 443px;
+}
+
+.sdiv-zug .autor-blog {
+    margin-left: initial;
+    padding-right: initial;
+}
+
+.sdiv-zug .autor-blog > div {
+    width: 505px;
+}
 
 
 
