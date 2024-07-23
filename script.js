@@ -77,26 +77,31 @@ let movtextBig = document.getElementById('movtext-big');
 let movtextBigShow = false;
 var span1 = document.querySelector('.movtext span');
 
-window.onscroll = function () {
-    if (window.pageYOffset > 50) {
-        // span1.classList.add('txt-type'); 
-        movtextBig.style.visibility = 'visible';
-        movtextBig.style.transform = 'translateY(0px)';
-        movtextBig.style.opacity = '1';
-        movtextBigShow = true;
-        if (!stop) {
-            init();
-            stop = true;
+if (window.innerWidth > 758) {
+    window.onscroll = function () {
+        if (window.pageYOffset > 50) {
+            // span1.classList.add('txt-type'); 
+            movtextBig.style.visibility = 'visible';
+            movtextBig.style.transform = 'translateY(0px)';
+            movtextBig.style.opacity = '1';
+            movtextBigShow = true;
+            if (!stop) {
+                init();
+                stop = true;
+            }
         }
-    } else {
-        // movtextBig.style.display = 'none';
-        // movtextBig.style.visibility = 'hidden';
-        // movtextBig.style.transform = 'translateY(100px)';
-        // movtextBig.style.opacity = '0';
-        // movtextBigShow = false;
-        // span1.classList.remove('txt-type');
     }
+} else {
+    movtextBigShow = true;
+    if (!stop) {
+        init();
+        stop = true;
+    }
+
 }
+
+
+
 
 window.addEventListener('scroll', reveal)
 
@@ -135,22 +140,43 @@ function reveal2() {
 }
 
 
-let callBtn = document.querySelector('#call-btn');
-let details = document.querySelector('#phones-action');
+if (document.body.contains(document.querySelector('#call-btn'))) {
+    let callBtn = document.querySelector('#call-btn');
+    let details = document.querySelector('#phones-action');
 
-callBtn.addEventListener("click", function (e) {
-    if (callBtn.classList.contains('no-effect') === true) {
+    callBtn.addEventListener("click", function (e) {
+        if (callBtn.classList.contains('no-effect') === true) {
+            return;
+        } else {
+            e.preventDefault();
+            callBtn.style.display = 'none';
+            details.style.display = 'flex';
+        }
+    });
+}
+
+
+
+let phone_m = document.querySelector('#absi');
+let phone_m_img = document.querySelector('#menu-phone');
+let slide_nav = document.querySelector('#slide-nav');
+let closd = false;
+
+phone_m.addEventListener("click", function (e) {
+
+    if (closd) {
+        phone_m_img.src = 'photos/menu-bar.png';
+        slide_nav.style.top = '-100%';
+        phone_m_img.style.scale = '1';
+        closd = false;
         return;
-    } else {
-        e.preventDefault();
-        callBtn.style.display = 'none';
-        details.style.display = 'flex';
     }
 
-});
-
-
-
+    closd = true;
+    phone_m_img.src = 'photos/black-close.png';
+    slide_nav.style.top = '70px';
+    phone_m_img.style.scale = '0.7';
+})
 
 
 
