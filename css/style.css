@@ -14,6 +14,7 @@ html {
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden !important;
     font-family: 'Noto Sans Hebrew', sans-serif;
 }
 
@@ -1389,6 +1390,9 @@ ul {
         transform: translateY(-400px);
         opacity: 1;
         z-index: 80;
+        margin: auto;
+        display: block;
+        padding-top: 18px;
     }
 
 
@@ -1396,6 +1400,7 @@ ul {
         font-size: 18px;
         font-weight: 600;
         top: 10px;
+        margin-top: 28px;
     }
 
     #web-head .small-head {
