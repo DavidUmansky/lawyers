@@ -389,6 +389,7 @@ a {
 
 #about-detalis h2 {
     margin-bottom: 8px;
+    margin-right: -21px;
 }
 
 #about-members h2 {
@@ -1395,7 +1396,6 @@ ul {
         padding-top: 18px;
     }
 
-
     h2.movtext {
         font-size: 18px;
         font-weight: 600;
@@ -1407,6 +1407,11 @@ ul {
         font-size: 22px;
         font-weight: 900;
         top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     .navbar, #web-head .top-line div.first-top {
@@ -1618,7 +1623,7 @@ ul {
 
     #foot-img {
         text-align: center;
-    } 
+    }
 
     .two-logos {
         justify-content: center;
@@ -1628,6 +1633,58 @@ ul {
         margin-bottom: 30px;
     }
 
+    #about-members h2 {
+        margin-top: 312px;
+    }
+
+    #web-head .hero2 {
+        background: url(../photos/patish.jpg) no-repeat -1214px center / cover !important;
+        height: 1300px;
+    }
+
+    .hero2::before {
+        background: rgb(20 19 19 / 64%);
+    }
+
+    #web-head section .skewed2 {
+        transform: skewY(-8deg);
+    }
+
+    #about-detalis {
+        background-color: rgb(17 16 16 / 0%);
+        width: 361px;
+        padding: 40px 14px;
+        border-radius: 4px;
+        margin-top: 0px;
+        text-align: initial;
+    }
+
+    #about-detalis p {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+
+    #about-members h2 {
+        margin-top: 40px;
+    }
+
+    .about-preson {
+        width: 350px;
+        text-align: initial;
+    }
+
+    #about-members h2 {
+        margin-right: -21px;
+    }
+
+    #home-b {
+        padding: 0rem 16px;
+    }
+
+    #home-b .stats {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
@@ -1706,6 +1763,12 @@ ul {
 
 }
 
+@media (max-height: 500px) {
+    #about-members h2 {
+        margin-top: 300px;
+    }
+}
+
 @media (max-height: 500px) and (min-width: 600px) and (max-width: 760px) {
     #slide-nav, #web-head .top-line {
         display: none;
@@ -1739,6 +1802,10 @@ ul {
         display: none;
     }
 
+    #about-members h2 {
+        margin-top: 30px;
+    }
+
 }
 
 @media (min-height: 900px) {
@@ -1765,6 +1832,25 @@ ul {
     #main-footer .list li {
         width: 77%;
     }
+
+    #about-detalis {
+        padding: 40px 26px;
+    }
+
+    #about-detalis h2 {
+        margin-bottom: -5px;
+        margin-right: -26px;
+        margin-top: 20px;
+    }
+
+    #about-members h2 {
+        margin-right: -33px;
+    }
+
+    .about-preson {
+        width: 320px;
+    }
+
 }
 
 @media (max-width: 370px) {
@@ -1823,6 +1909,21 @@ ul {
         margin-top: 10px;
     }
 
+    #about-detalis {
+        width: 350px;
+    }
+
+}
+
+@media (max-height: 350px) {
+
+    #about-detalis {
+        margin-top: 509px;
+    }
+
+    #about-members h2 {
+        margin-top: 415px;
+    }
 }
 
 @media (min-width: 517px) and (max-width: 940px) {
@@ -1846,9 +1947,48 @@ ul {
 
 }
 
+@media (min-width: 760px) and (max-width: 846px) {
+
+    #about-detalis {
+        width: 750px;
+    }
+
+    .about-preson {
+        width: 675px;
+    }
 
 
 
+}
+
+@media (min-height: 1000px) {
+    #about-detalis {
+        margin-top: 0px;
+    }
+
+    #about-members {
+        margin-top: -110px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 759px) {
+
+    #web-head .hero2 {
+        height: 960px;
+        background: url(../photos/patish.jpg) no-repeat -614px center / cover !important;
+    }
+
+    #about-detalis {
+        width: 572px;
+        padding: 40px 14px;
+    }
+
+    .about-preson {
+        width: 510px;
+    }
+
+}
 
 
 

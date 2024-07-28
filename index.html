@@ -25,7 +25,8 @@
                 <ul class="big-list">
                     <li class="current"><a href="index.html">בית</a></li>
                     <li><a href="about.html">אודות</a></li>
-                    <li id="click-first-list"><a href="info.html">התחומים שלנו<i class="fas fa-angle-down" aria-hidden="true"></i></a>
+                    <li id="click-first-list"><a href="info.html">התחומים שלנו<i class="fas fa-angle-down"
+                                aria-hidden="true"></i></a>
                         <ul id="first-list" class="first-list">
                             <li><a href="work-accident.html#links-infoimg">תאונות עבודה</a></li>
                             <li><a href="car-accident.html#links-infoimg">תאונת דרכים</a></li>
@@ -113,11 +114,11 @@
 
             <div id="movtext-big">
                 <span class="small-head">
-                    נלחמים למען הזכויות שלכם
+                    פועלים ונלחמים בשבילך
                 </span>
                 <h2 class="movtext">
                     <span class="txt-type" data-wait="4000"
-                        data-words='["המשרד שלנו פועל למען הגנה על הזכויות שלכם במקרה ותזדקקו לעזרה משפטית במגוון תחומים.", "אם חלילה נפגעתם מתאונת דרכים, תאונת עבודה, רשלנות רפואית - פנו אלינו ונעשה את המקסימום למענכם.","עזרנו לעשרות לקוחות לקבל את הפיצויים המגיעים להם, הזכויות שלכם הם העדיפות העליונה עבורנו."]'>
+                        data-words='["המשרד שלנו משרד בוטיק המתמחה במתן שירות מקצועי ויחס אישי.", "במידה ונפגעתם ואתם רוצים למצות את זכויותיכם – פנו אלינו ואנחנו נפעל למקסום המגיע לכם על פי החוק.","עם ניסיון רב ולקוחות מרוצים – נפעל גם עבורך למיצוי זכויותייך והשגת הפיצויים המגיעים לך."]'>
                     </span>
                 </h2>
             </div>
@@ -143,42 +144,45 @@
                             <img src="photos/accident.png" alt="">
                             <h3>תאונת עבודה</h3>
                             <p>
-                                אם אתם חשים שיש פגיעה בזכויותיכם במקום העבודה, אתם לא צריכים להתמודד עם זה לבד.
+                                כאשר עוברים תאונת עבודה חשוב לפנות בהקדם לעורך דין שיוכל ללוות את הנפגע.
                             </p>
                         </div>
                         <div class="reveal2">
                             <img src="photos/car-crash.png" alt="">
                             <h3>תאונת דרכים</h3>
                             <p>
-                                בבתי הדין לעבודה, עריכת הסכמי עבודה, טיפול בסכסוכים הן במישור הפרט.
+                                עורך דין מומחה בתחום בעל מידת
+                                הרגישות הנכונה והידע הנדרש יסייע לנפגע לקבל את מלוא זכויותיו.
                             </p>
                         </div>
                         <div class="reveal2">
                             <img src="photos/injured.png" alt="">
                             <h3>רשלנות רפואית</h3>
                             <p>
-                                אחד התחומים שהפכו ל"חמים" בשנים האחרונות הוא הנושא של "רשלנות רפואית".
+                                מהנושאים המדוברים ביותר בשני העשורים האחרונים. בתי המשפט הרחיבו את עילות התביעה ומכירים
+                                באפשרות של נפגעים לדרוש פיצויים על נזקים.
                             </p>
                         </div>
                         <div class="reveal2">
                             <img src="photos/insurance.png" alt="">
                             <h3>ביטוח לאומי</h3>
                             <p>
-                                תאונת דרכים מתרחשת בכל פעם שאדם נפגע מרכב כנוסע, כנהג או כהולך רגל.
+                                המקום אליו פונים למיצוי זכויות נפגע על מנת שיבטיח את הסיוע הכלכלי ומימוש הזכויות של
+                                הנפגע.
                             </p>
                         </div>
-                        <div class="reveal2">
+                        <!-- <div class="reveal2">
                             <img src="photos/rotten.png" alt="">
                             <h3>מוצרים פגומים</h3>
                             <p>
                                 חשוב לדעת: תאונת דרכים יכולה להיות גם תאונת עבודה. כלומר תאונת הדרכים.
                             </p>
-                        </div>
+                        </div> -->
                         <div class="reveal2">
                             <img src="photos/violence.png" alt="">
-                            <h3>מקרי פגיעות</h3>
+                            <h3>תאונות קטינים</h3>
                             <p>
-                                כל נפגע שנגרם לו נזק גוף כתוצאה מתאונת דרכים מגיעות לו זכויות שנקבעו על ידי חוק.
+                                 חשוב לזכור שמדובר בתאונה שונה מתאונה בה מעורב בגיר והיחס אליה שונה.
                             </p>
                         </div>
                     </div>
@@ -331,7 +335,6 @@
     </footer>
 
     <script>
-
         if (window.innerWidth > 431) {
             var skewed = document.querySelector('.skewed');
 
@@ -347,11 +350,111 @@
                 skewed.style.transform = "skewY(" + value + "deg)"
             })
         }
-
-
-
-
     </script>
+    <script>
+        class TypeWriter {
+            constructor(txtElement, words, wait = 4000) {
+                this.txtElement = txtElement;
+                this.words = words;
+                this.txt = '';
+                this.wordIndex = 0;
+                this.wait = parseInt(wait, 10);
+                this.type();
+                this.isDeleting = false;
+            }
+
+            type() {
+                // Current index of word
+                const current = this.wordIndex % this.words.length;
+                // Get full text of current word
+                const fullTxt = this.words[current];
+
+                // Check if deleting
+                if (this.isDeleting) {
+                    // Remove char
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    // Add char
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                // Insert txt into element
+                this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+                // Initial Type Speed
+                let typeSpeed = 80;
+
+                if (this.isDeleting) {
+                    typeSpeed /= 2;
+                }
+
+                // If word is complete
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    // Make pause at end
+                    typeSpeed = this.wait;
+                    // Set delete to true
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    // Move to next word
+                    this.wordIndex++;
+                    // Pause before start typing
+                    typeSpeed = 500;
+                }
+
+                setTimeout(() => this.type(), typeSpeed);
+            }
+        }
+
+        let stop = false;
+
+        // Init On DOM Load
+        // document.addEventListener('DOMContentLoaded', init);
+
+        // Init App
+        function init() {
+            const txtElement = document.querySelector('.txt-type');
+            const words = JSON.parse(txtElement.getAttribute('data-words'));
+            const wait = txtElement.getAttribute('data-wait');
+            // Init TypeWriter
+            new TypeWriter(txtElement, words, wait);
+        }
+
+        var skewed = document.querySelector('.skewed');
+
+        // window.addEventListener('scroll', function () {
+        //     var value = 3 - window.scrollY / 90;
+        //     skewed.style.transform = "skewY(" + value + "deg)"
+        // })
+
+        let movtextBig = document.getElementById('movtext-big');
+        let movtextBigShow = false;
+        var span1 = document.querySelector('.movtext span');
+
+        if (window.innerWidth > 758) {
+            window.onscroll = function () {
+                if (window.pageYOffset > 50) {
+                    // span1.classList.add('txt-type'); 
+                    movtextBig.style.visibility = 'visible';
+                    movtextBig.style.transform = 'translateY(0px)';
+                    movtextBig.style.opacity = '1';
+                    movtextBigShow = true;
+                    if (!stop) {
+                        init();
+                        stop = true;
+                    }
+                }
+            }
+        } else {
+            movtextBigShow = true;
+            if (!stop) {
+                init();
+                stop = true;
+            }
+
+        }
+    </script>
+
 
     <script src="script.js"></script>
 </body>
