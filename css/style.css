@@ -627,6 +627,7 @@ a {
 #main-footer {
     background: #413e38;
     color: #fff;
+    position: relative;
 }
 
 #main-footer h3 {
@@ -1686,20 +1687,126 @@ ul {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .hero3 h2 {
+        width: 345px;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 128px;
+        margin-bottom: 20px;
+    }
+
+    .hero3 p {
+        font-size: 19px;
+        width: 360px;
+        padding: 0 15px;
+        text-align: initial;
+    }
+
+    .hero3 h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #web-head .hero3 {
+        background: url(../photos/info-bg.jpg) no-repeat center center / cover !important;
+        height: 1255px;
+    }
+
+    .hero3::before {
+        background: rgb(0 0 0 / 78%);
+    }
+
+    #links-infoimg {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .img-header {
+        width: 360px;
+        margin-left: initial;
+        border-bottom: initial;
+        border-top: initial;
+        display: block;
+        margin: auto;
+    }
+
+    .img-links ul {
+        width: 360px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .img-links #call-btn {
+        display: none;
+    }
+
+    #links-infoimg+p {
+        width: 360px;
+        padding-left: initial;
+        padding-bottom: 20px;
+    }
+
+    .h2-in-img {
+        font-size: 28px;
+    }
+
+    #stories {
+        padding-top: 60px;
+    }
+
+    #web-head .hero4 {
+        height: 210px;
+    }
+
+    .hero4 h2 {
+        margin-top: initial;
+    }
+
+    .story-s-div {
+        flex-direction: column;
+        max-width: 360px;
+        margin: auto;
+        padding: initial;
+    }
+
+    .story-s-div img {
+        width: 360px;
+        margin-left: initial;
+    }
+
+    .autor-blog>div {
+        width: 360px;
+    }
+
+    .autor-blog {
+        margin-top: 35px;
+    }
+
+    .autor-blog>div img {
+        width: 45px;
+        margin-top: 8px;
+    }
+
+    .article-dif .story-s-div {
+        flex-direction: column;
+    }
+
+    .sdiv-zug img.zugim {
+        width: 360px;
+        margin-right: initial;
+    }
+
+    .sdiv-zug .autor-blog>div {
+        width: 360px;
+    }
+
+
 }
 
 @media (max-width: 430px) and (min-height: 650px) and (max-height: 800px) {
     #movtext-big {
         transform: translateY(-150%);
     }
-}
-
-@media (min-width: 614px) and (max-width: 758px) {
-
-    #check-form .row .column {
-        width: 100%;
-    }
-
 }
 
 @media (min-width: 760px) and (max-width: 1055px) {
@@ -1743,6 +1850,14 @@ ul {
     #likes .grid-conten {
         padding: 0px 40px;
     }
+
+    #web-head .hero3 {
+        background: url(../photos/info-bg.jpg) no-repeat center center / cover !important;
+    }
+
+    #web-head .hero2 {
+        background: url(../photos/patish.jpg) no-repeat top center / cover !important;
+    }
 }
 
 @media (min-width: 760px) and (max-width: 878px) {
@@ -1759,6 +1874,14 @@ ul {
 
     #main-footer .list li:nth-child(3) {
         text-align: center;
+    }
+
+    .img-links ul {
+        display: none;
+    }
+
+    .img-header, #links-infoimg+p {
+        width: 480px;
     }
 
 }
@@ -1851,6 +1974,15 @@ ul {
         width: 320px;
     }
 
+    #links-infoimg+p, .img-header, .img-links ul {
+        width: 320px;
+    }
+
+    .story-s-div,.story-s-div img,.autor-blog>div,.sdiv-zug .autor-blog>div,.sdiv-zug img.zugim {
+        width: 320px;
+    } 
+
+
 }
 
 @media (max-width: 370px) {
@@ -1889,6 +2021,15 @@ ul {
         margin-top: 6px !important;
         width: 190px;
     }
+
+    #links-infoimg, #links-infoimg+p {
+        padding-right: 40px;
+    }
+
+    .img-links ul {
+        margin-left: 40px;
+    }
+
 }
 
 @media (min-width: 760px) and (max-width: 1055px) {
@@ -1990,9 +2131,64 @@ ul {
 
 }
 
+@media (min-width: 614px) and (max-width: 758px) {
+    #check-form .row .column {
+        width: 100%;
+    }
+
+    .hero3 p {
+        width: 580px;
+    }
+
+    #web-head .hero3 {
+        background: url(../photos/info-bg.jpg) no-repeat center center / cover !important;
+    }
+}
+
+@media (min-width: 614px) and (max-width: 758px) {
+    #check-form .row .column {
+        width: 100%;
+    }
+
+    .hero3 p {
+        width: 580px;
+    }
+
+    #web-head .hero3 {
+        background: url(../photos/info-bg.jpg) no-repeat center center / cover !important;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 939px) {
+    #links-infoimg {
+        align-items: center;
+    }
+
+    #call-btn {
+        display: none;
+    }
+
+    .img-header {
+        margin-right: 30px;
+    }
+
+    .img-links ul {
+        margin-left: 30px;
+    }
+
+    #links-infoimg+p {
+        margin-right: 30px;
+        padding-bottom: 38px;
+    }
 
 
 
+
+
+
+
+
+}
 
 
 
